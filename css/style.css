@@ -38,26 +38,20 @@ body {
 	padding: .4em;
 	margin-left: .5em;
 	display: inline-block;
-	
-	text-shadow: .05em .04em 2px rgba(0,0,0,0.15);
-	
 }
 
 .logo a {
-	background-image: -webkit-linear-gradient(left, var(--clr-1), var(--clr-2), var(--clr-1));
+	background-image: -webkit-linear-gradient(left, var(--clr-1), var(--clr-2));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 	
 	transition: all ease-in-out;
-	transition-duration: 5000ms;
-	transform-origin: left;
-	
+	transition-duration: 250ms;
+	transform-origin: left;	
 }
 
 .logo a:hover {
-	background-image: -webkit-linear-gradient(left, var(--clr-1), var(--clr-1), var(--clr-1));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+	text-shadow: 0em 0em 0px var(--clr-1), .04em .04em 2px rgba(87,188,144,0.5);	
 }
 
 header {
