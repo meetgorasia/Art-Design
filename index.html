@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Artiders</title>
 <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"  type="text/css" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <link rel="stylesheet" href="css/style.css">
 <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
@@ -17,14 +18,23 @@
 		<div class="hamburger"></div>
 	</div>
 	<div class="logo"><a href="index.html">Artiders&nbsp;</a></div>
+	<div class="menu">
 	<nav>
 		<ul>
-			<li><a href="#">Home</a></li>
-			<li><a href="#">Artists</a></li>
-			<li><a href="#">Events</a></li>
+			<li><a href="#" class="menu-item">Home</a></li>
+			<li><a href="#" class="menu-item">Artists</a></li>
+			<li><a href="#" class="menu-item">Events</a></li>
+			<li><a href="#" id="search"><i class="fa fa-search"></i></a></li>
 		</ul>
+		<div class="search-form">
+			<form>
+				<input type="text" name="" placeholder="Type here to search....">
+			</form>
+		</div>
+		<a class="close"><i class="fa fa-times"></i></a>
 	</nav>
 	
+</div>
 	<div class="account-menu">
 		<img src="img/account-icon.png" alt="Account Menu">
 	</div>
@@ -61,6 +71,27 @@
 	
 	
 </footer>
+<script src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
 <script src="js/custom.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#search').click(function(){
+			$('.menu-item').addClass('hide-item')
+			$('.search-form').addClass('active')
+			$('.close').addClass('active')
+			$('#search').hide()
+		})
+
+		$('.close').click(function(){
+			$('.menu-item').removeClass('hide-item')
+			$('.search-form').removeClass('active')
+			$('.close').removeClass('active')
+			$('#search').show()
+		})
+
+	})
+</script>
 </body>
 </html>
