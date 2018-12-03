@@ -26,7 +26,7 @@ $(document).ready(function(){
 //			$('#search').hide();			
 			function searchFocus() {
 			$('#search-bar').focus();
-			}		
+			}
 			setTimeout(searchFocus, 1000);
 		});
 		
