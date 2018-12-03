@@ -8,10 +8,9 @@ $(document).ready(function(){
 	});
 });
 
-/*
+
 
 function toggleSidebar(){
-	document.getElementsByClassName("left-sidebar")[0].classList.toggle('sideBarActive');
+	document.getElementsByClassName("sidebar")[0].classList.toggle('sidebarActive');
 }
 
-*/

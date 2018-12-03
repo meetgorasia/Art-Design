@@ -115,8 +115,117 @@ nav a::before {
 	transform-origin: left;
 }
 
+
 nav a:hover::before {
 	transform: scale(1);
+}
+
+.menu ul li a.menu-item{
+	transform: scale(1);
+	transition: 0.5s;
+	display: block;
+}
+
+.menu ul li a.menu-item.hide-item{
+	transform: scale(0);
+}
+
+.menu ul li:nth-child(1) a.menu-item.hide-item
+{
+	transition-delay: 0.3s;
+}
+
+.menu ul li:nth-child(2) a.menu-item.hide-item
+{
+	transition-delay: 0.2s;
+}
+
+.menu ul li:nth-child(3) a.menu-item.hide-item
+{
+	transition-delay: 0.1s;
+}
+
+.menu ul li:nth-child(1) a.menu-item
+{
+	transition-delay: 0s;
+}
+
+.menu ul li:nth-child(2) a.menu-item
+{
+	transition-delay: 0.1s;
+}
+
+.menu ul li:nth-child(3) a.menu-item
+{
+	transition-delay: 0.2s;
+}
+
+.search-form{
+	position: absolute;
+	top:0;
+	left:50%;
+	transform: translateX(0);
+	width: 400px;
+	height: 44px;
+	opacity: 0;
+	visibility: hidden;
+	transition: 0.5s;
+
+}
+.search-form.active{
+
+	opacity: 1;
+	visibility: visible;
+	transition-delay: 0.3s;
+	transform: translateX(-50%); 
+}
+
+.search-form input{
+	width: 100%;
+	height: 44px;
+	background: transparent;
+	color: #003933;
+	border: none;
+	outline: none;
+	font-size: 16px;
+}
+
+.search-form input::placeholder
+{
+	color:#003933;
+}
+
+.search-form:before
+{
+	content: '\f002';
+	position: absolute;
+	top: 12px;
+	left: -26px;
+	font-size: 18px;
+	color: #003933;
+	font-family: fontAwesome;
+}
+
+.close{
+	position: absolute;
+	right: 0;
+	top: 0;
+
+
+	height: 30px;
+	background : #fff;
+	color: #003933;
+	width: 20px;
+	cursor: pointer;
+	opacity: 0;
+	visibility: hidden;
+	
+	
+}
+
+.close.active{
+	opacity: 1;
+	visibility: visible;
 }
 
 .account-menu {
@@ -214,4 +323,53 @@ nav a:hover::before {
 	top: 0;
 	transform: rotate(135deg);
 		background: var(--clr-1);
+}
+
+.sidebar{
+	position:fixed;
+	float: left;
+	width: 250px;
+	left: -250px;
+	padding: 20px;
+	height: 100%;
+	background-color: rgb(40, 148, 94);
+	
+	
+	transition: .5s all;
+	
+}
+
+.sidebar.sidebarActive{
+	left: 0;
+}
+
+.sidebar ul{
+	margin: 0;
+	padding: 10px;
+}
+
+.sidebar ul li{
+	list-style: none;
+}
+
+.sidebar ul li a{
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	line-height: 40px;
+	text-align: left;
+	display: block;
+	transition: 0.6s all;
+
+}
+
+.sidebar ul li a:hover{
+
+	color: #015249;
+}
+
+.style-icon{
+	color: rgba(255,255,255,0.4);
+	margin-right: 0.5em;
+
 }
