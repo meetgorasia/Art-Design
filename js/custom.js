@@ -10,13 +10,11 @@ $(document).ready(function(){
 
 /* Sidebar */
 
-/*
 
 function toggleSidebar(){
-	document.getElementsByClassName("left-sidebar")[0].classList.toggle('sideBarActive');
+	document.getElementsByClassName("sidebar")[0].classList.toggle('sidebarActive');
 }
 
-*/
 
 /* Search Menu*/
 

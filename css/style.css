@@ -10,6 +10,19 @@
 	--clr-4: #A5A5AF;
 	--clr-5: #FFFFFF;
 	
+	--clr-1-tra-1: rgba(1,82,73,0.80);
+	--clr-2-tra-1: rgba(87,188,144,0.80);
+	--clr-3-tra-1: rgba(119,201,212,0.80);
+	--clr-4-tra-1: rgba(165,165,175,0.80);
+	--clr-5-tra-1: rgba(255,255,255,0.80);
+
+	--clr-1-tra-2: rgba(1,82,73,0.60);
+	--clr-2-tra-2: rgba(87,188,144,0.60);
+	--clr-3-tra-2: rgba(119,201,212,0.60);
+	--clr-4-tra-2: rgba(165,165,175,0.60);
+	--clr-5-tra-2: rgba(255,255,255,0.60);
+	
+
 	--clr-1-drk-1: #00463E;
 	--clr-1-drk-2: #003933;
 	--clr-2-drk-1: #388D68;
@@ -47,13 +60,14 @@ header {
 	background: var(--clr-5);
 	position: fixed;
 	width: 100%;
-	min-height: 100px;
+	min-height: 80px;
 	overflow: hidden;
 	transition-duration: 500ms;
 }
 
 .scrolled-header {
-	opacity: .8;
+	background: var(--clr-5-tra-1);
+	font-size: 12px;
 }
 
 /*
@@ -434,7 +448,9 @@ header .header-button:hover {
 }
 
 .content {
+	display: flex;
 	text-align:center;
+	align-items: center;
 }
 
 .box {
@@ -447,6 +463,9 @@ header .header-button:hover {
 	height: 30em;
 	background-color: pink;
 }
+
+/* Sidebar */
+
 /*
 .sidebar {
 	position: absolute;
@@ -456,6 +475,48 @@ header .header-button:hover {
 }
 */
 
+.sidebar{
+	
+	float: left;
+	top: 6.8em;
+	width: 20%;
+	left: -20%;
+	padding: 20px;
+	text-transform: uppercase;
+	height: 100%;
+	background-color: rgb(40, 148, 94);
+	position:fixed;
+	transition: .5s all;
+	
+}
+ .sidebar.sidebarActive{
+	left: 0;
+}
+ .sidebar ul{
+	margin: 0;
+	padding: 10px;
+}
+ .sidebar ul li{
+	list-style: none;
+	border-bottom: solid 1px rgba(255,255,255,.15);
+	margin-top: 1em;
+}
+ .sidebar ul li a{
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	line-height: 40px;
+	text-align: left;
+	display: block;
+	transition: 0.6s all;
+ }
+ .sidebar ul li a:hover{
+ 	color: #015249;
+}
+ .style-icon{
+	color: rgba(255,255,255,0.4);
+	margin-right: 0.5em;
+ } 
 
 /* Media Queries - Tablet*/
 
