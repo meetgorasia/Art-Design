@@ -330,3 +330,52 @@ nav a:hover::before {
 	transform: rotate(135deg);
 		background: var(--clr-1);
 }
+
+.sidebar{
+	position:fixed;
+	float: left;
+	width: 250px;
+	left: -250px;
+	padding: 20px;
+	height: 100%;
+	background-color: rgb(40, 148, 94);
+	
+	
+	transition: .5s all;
+	
+}
+
+.sidebar.sidebarActive{
+	left: 0;
+}
+
+.sidebar ul{
+	margin: 0;
+	padding: 10px;
+}
+
+.sidebar ul li{
+	list-style: none;
+}
+
+.sidebar ul li a{
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	line-height: 40px;
+	text-align: left;
+	display: block;
+	transition: 0.6s all;
+
+}
+
+.sidebar ul li a:hover{
+
+	color: #015249;
+}
+
+.style-icon{
+	color: rgba(255,255,255,0.4);
+	margin-right: 0.5em;
+
+}
