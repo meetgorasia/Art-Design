@@ -34,13 +34,13 @@
 *, *::before, *::after {
 	box-sizing: border-box;	
 }
-
+/*
 .container {
 	width: 95%;
 	margin: auto;
 	overflow: hidden;
 }
-
+*/
 a {
 	text-decoration: none;
 }
@@ -446,7 +446,7 @@ header .header-button:hover {
 
 }
 
-/* call to action button  */
+/* call to action button  
 
 .wrapper {
 	position: absolute;
@@ -517,6 +517,8 @@ header .header-button:hover {
 	transition-timing-function: cubic-bezier(0.45, 1.64, 0.47, 0.66);
   }
 
+  */
+  
 /*liquid button  */
 
 .liquid-button {
@@ -633,6 +635,60 @@ header .header-button:hover {
 	}
 }
 
+/*user profile image */
+.prof-img{
+	display: flex;
+	background-color: yellow;
+	position: relative;	
+	height: 7em;
+	width: 7em;
+	border-radius: 50%;
+}
 
+.prof-img img{
+	width: 7em;
+	display: inline-block;
+}
 
+/*userprofile square button */
+.square_btn{
+    display: inline-block;
+    padding: 7px 20px;
+	border-radius: 25px;
+    text-decoration: none;
+	color: #FFF;
+	font-weight: bold;
+    background-image: -webkit-linear-gradient(45deg, #FFC107 0%, #ff8b5f 100%);
+    background-image: linear-gradient(45deg, #FFC107 0%, #ff8b5f 100%);
+	transition: .4s;
+	
+}
 
+.square_btn:hover {
+    background-image: -webkit-linear-gradient(45deg, #FFC107 0%, #f76a35 100%);
+    background-image: linear-gradient(45deg, #FFC107 0%, #f76a35 100%);
+}
+
+/*user profile posts*/
+
+.blog-row {margin-top:50px; }
+.margin_bottom30 { margin-bottom:30px; }
+.margin_left10 {margin-left:10px; }
+.blog-content {padding:10px; }
+.bg-white {background-color:#fff;}
+
+/*like and dislike */
+.glyphicon-heart-empty{
+    font-size: 30px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.glyphicon-heart-empty:hover {
+  color: red;
+  cursor: pointer
+}
+
+.glyphicon-heart{
+	cursor: pointer
+}
