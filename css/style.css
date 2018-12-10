@@ -63,7 +63,8 @@ header {
 	position: fixed;
 	width: 100%;
 	min-height: 80px;
-	overflow: hidden;
+	/* overflow-X: hidden;
+	overflow-y: initial; */
 /*	transition: 250ms all ease-in-out;*/
 }
 
@@ -406,19 +407,6 @@ header .header-button:hover {
 }
 
 
-/* Account Menu */
-
-.account-menu {
-	float: right;
-	display: none;
-	color: white;
-	transform: translate(-50%,50%);
-}
-
-.account-menu img {
-	height: 3em;
-	width: 3em;
-}
 
 /* Sidebar */
 
@@ -528,5 +516,86 @@ header .header-button:hover {
 }
 
 
+/* Account Menu */
+
+.account-menu {
+	float: right;
+	display: none;
+	color: white;
+	transform: translate(-50%,50%);
+}
+
+.account-menu img {
+	height: 3em;
+	width: 3em;
+}
 
 
+#login{
+	display: block;
+	font-weight: 900;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-shadow: .2em .2em 5px rgba(0,0,0,0.15);
+	font-size: 1.2rem;
+	color: var(--clr-1);
+	padding: 0.5em 0em;
+	margin: 0 2em;
+	transition-duration: 300ms;
+	transition-delay: 0s
+}
+  .logform {
+
+	display:none;
+	position: fixed;
+	z-index:1;
+	background: #FFFFFF;
+	max-width: 360px;
+	left: 80em;
+	top: 5.5em;
+	padding: 45px;
+	text-align: center;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+	
+  }
+  .logform input {
+	font-family: "Roboto", sans-serif;
+	outline: 0;
+	background: #f2f2f2;
+	width: 100%;
+	border: 0;
+	margin: 0 0 15px;
+	padding: 15px;
+	box-sizing: border-box;
+	font-size: 14px;
+  }
+  .logform button {
+	font-family: "Roboto", sans-serif;
+	text-transform: uppercase;
+	outline: 0;
+	background: #4CAF50;
+	width: 100%;
+	border: 0;
+	padding: 15px;
+	color: #FFFFFF;
+	font-size: 14px;
+	-webkit-transition: all 0.3 ease;
+	transition: all 0.3 ease;
+	cursor: pointer;
+  }
+  .logform button:hover,.logform button:active,.logform button:focus {
+	background: #43A047;
+  }
+  .logform .message {
+	margin: 15px 0 0;
+	color: #b3b3b3;
+	font-size: 12px;
+  }
+  .logform .message a {
+	color: #4CAF50;
+	text-decoration: none;
+  }
+  .logform .register-form {
+	display: none;
+  }
+ 

@@ -21,6 +21,7 @@
 <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"  type="text/css" />
 <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
 </head>
 
 <body>
@@ -41,6 +42,7 @@
 					<li><a href="#" class="menu-item">Artists</a></li>
 					<li><a href="#" class="menu-item">Events</a></li>
 					<li><a href="javascript:;" class="menu-item" id="search"><i class="fa fa-search"></i>&nbsp;&nbsp;Search for awesome content</a></li>
+					<li><button type="button" id="login">Log In</button></li>	
 				</ul>
 				<div class="search-form">
 					<form>
@@ -48,18 +50,37 @@
 					</form>
 				</div>
 				<a class="close"><i class="fa fa-times"></i></a>
+					</div>
+			 </div>
 			</nav>
-		</div>
-		
-		<div class="account">
-			<a class="header-button" href="#">LOG IN</a>
-		
-			<div class="account-menu">
-				<img src="img/account-icon.png" alt="Account Menu">
-			</div>
-		</div>
+
+
+	</div>
 	</div>
 </header>
+
+
+
+	<div class="logform" id="logform">
+	  <form class="register-form">
+		<input type="text" placeholder="name"/>
+		<input type="password" placeholder="password"/>
+		<input type="text" placeholder="email address"/>
+		<button>create</button>
+		<p class="message">Already registered? <a href="#">Sign In</a></p>
+	  </form>
+	  <form class="login-logform">
+		<input type="text" placeholder="username"/>
+		<input type="password" placeholder="password"/>
+		<button>login</button>
+		<p class="message">Not registered? <a href="#">Create an account</a></p>
+	  </form>
+	</div>
+
+
+
+
+
 
 <div class="sidebar">
 	<ul>
@@ -99,6 +120,8 @@
 		</ul>
 	</div>	
 </div>
+
+
 
 <section>
 	<div class="container">
@@ -142,6 +165,8 @@
 <!-- Scripts -->
 
 <script src="js/custom.js"></script>
+<script src="js/Login.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Flip/1.0.18/jquery.flip.js"></script>
 
 </body>
 </html>
