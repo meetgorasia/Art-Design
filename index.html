@@ -21,6 +21,8 @@
 <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"  type="text/css" />
 <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+
 </head>
 
 <body>
@@ -41,6 +43,7 @@
 					<li><a href="#" class="menu-item">Artists</a></li>
 					<li><a href="#" class="menu-item">Events</a></li>
 					<li><a href="javascript:;" class="menu-item" id="search"><i class="fa fa-search"></i>&nbsp;&nbsp;Search for awesome content</a></li>
+					<li><button type="button" id="login">Log In</button></li>	
 				</ul>
 				<div class="search-form">
 					<form>
@@ -48,18 +51,37 @@
 					</form>
 				</div>
 				<a class="close"><i class="fa fa-times"></i></a>
+					</div>
+			 </div>
 			</nav>
-		</div>
-		
-		<div class="account">
-			<a class="header-button" href="#">LOG IN</a>
-		
-			<div class="account-menu">
-				<img src="img/account-icon.png" alt="Account Menu">
-			</div>
-		</div>
+
+
+	</div>
 	</div>
 </header>
+
+
+
+	<div class="logform" id="logform">
+	  <form class="register-form">
+		<input type="text" placeholder="name"/>
+		<input type="password" placeholder="password"/>
+		<input type="text" placeholder="email address"/>
+		<button>create</button>
+		<p class="message">Already registered? <a href="#">Sign In</a></p>
+	  </form>
+	  <form class="login-logform">
+		<input type="text" placeholder="username"/>
+		<input type="password" placeholder="password"/>
+		<button>login</button>
+		<p class="message">Not registered? <a href="#">Create an account</a></p>
+	  </form>
+	</div>
+
+
+
+
+
 
 <div class="sidebar">
 	<ul>
@@ -86,19 +108,106 @@
 	</div>
 </div>
 
-<div class="categories">
-	<div class="container">
-		<ul>
-			<li><a href="#">Music</a></li>
-			<li><a href="#">Dance</a></li>
-			<li><a href="#">Artworks</a></li>
-			<li><a href="#">Writing</a></li>
-			<li><a href="#">Filming</a></li>
-			<li><a href="#">Photography</a></li>
-			<li><a href="#">Acting</a></li>
-		</ul>
-	</div>	
-</div>
+
+<div class="submenu">
+	<div class="dropdown">
+	  <button class="dropbtn">Music 
+		<i class="fa fa-caret-down"></i>
+	  </button>
+	  <div class="dropdown-content">
+		
+		<a href="#">01-Singers</a>
+		<a href="#">02-Guitarists </a>
+		<a href="#">03-Pianists  </a>
+		<a href="#">04-Drummers </a>
+		<a href="#">05-Other Instrumentalists
+		<a href="#">06-Music Bands </a>
+		<a href="#">07-Music Composers </a>
+		<a href="#">08-DJs </a>
+		<a href="#">09-Music Engineers </a>
+		<a href="#">10-Street Music </a>
+	</div>
+	</div>
+	<div class="dropdown">
+		<button class="dropbtn">Dance
+		  <i class="fa fa-caret-down"></i>
+		</button>
+		<div class="dropdown-content">
+			<li><a href="#">01-Hip-Hop</a></li>
+			<li><a href="#">02-Jazz </a></li>
+			<li><a href="#">03-Ballet Dance  </a></li>
+			<li><a href="#">04-Tap Dance </a></li>
+			<li><a href="#">05-Modern Dance</a></li>
+			<li><a href="#">06-Lyrican Dance </a></li>
+			<li><a href="#">07-Contemporary Dance</a></li>
+			<li><a href="#">08-Line Dance </a></li>
+			<li><a href="#">09-Freestyle Dance </a></li>
+		</div>
+	  </div>
+	  <div class="dropdown">
+		<button class="dropbtn">Artworks 
+		  <i class="fa fa-caret-down"></i>
+		</button>
+		<div class="dropdown-content">
+			<li><a href="#">01-Painting</a></li>
+			<li><a href="#">02-Sculpture </a></li>
+			<li><a href="#">03-Crafts  </a></li>
+			<li><a href="#">04-Performance art </a></li>
+			<li><a href="#">05-Graffiti Artists</a></li>
+			<li><a href="#">06-Folk Artists </a></li>
+			<li><a href="#">07-Calligraphy </a></li>
+			<li><a href="#">08-Sand Artists </a></li>
+			<li><a href="#">09-Architecture </a></li>
+		</div>
+	  </div>
+	  <div class="dropdown">
+		<button class="dropbtn">Writing
+		  <i class="fa fa-caret-down"></i>
+		</button>
+		<div class="dropdown-content">  
+			<li><a href="#">01-Painting</a></li>
+			<li><a href="#">02-Sculpture </a></li>
+			<li><a href="#">03-Crafts  </a></li>
+			<li><a href="#">04-Performance art </a></li>
+			<li><a href="#">05-Graffiti Artists</a></li>
+			<li><a href="#">06-Folk Artists </a></li>
+			<li><a href="#">07-Calligraphy </a></li>
+			<li><a href="#">08-Sand Artists </a></li>
+			<li><a href="#">09-Architecture </a></li>
+		</div>
+	  </div>
+	  <div class="dropdown">
+		<button class="dropbtn">Fliming 
+		  <i class="fa fa-caret-down"></i>
+		</button>
+		<div class="dropdown-content">
+		  <a href="#">Link 1</a>
+		  <a href="#">Link 2</a>
+		  <a href="#">Link 3</a>
+		</div>
+	  </div>
+	  <div class="dropdown">
+		<button class="dropbtn">Photography
+		  <i class="fa fa-caret-down"></i>
+		</button>
+		<div class="dropdown-content">
+		  <a href="#">Link 1</a>
+		  <a href="#">Link 2</a>
+		  <a href="#">Link 3</a>
+		</div>
+	  </div>
+	  <div class="dropdown">
+		<button class="dropbtn">Acting 
+		  <i class="fa fa-caret-down"></i>
+		</button>
+		<div class="dropdown-content">
+		  <a href="#">Link 1</a>
+		  <a href="#">Link 2</a>
+		  <a href="#">Link 3</a>
+		</div>
+	  </div> 
+   
+  </div>
 
 <section>
 	<div class="container">
@@ -142,6 +251,8 @@
 <!-- Scripts -->
 
 <script src="js/custom.js"></script>
+<script src="js/Login.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Flip/1.0.18/jquery.flip.js"></script>
 
 </body>
 </html>
