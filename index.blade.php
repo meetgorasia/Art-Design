@@ -1,0 +1,192 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Artiders</title>
+
+
+<link rel="stylesheet" href="css/style1.css">
+
+<!-- Bootstrap-->
+
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" async></script>
+
+<!-- Fonts and Icons-->
+
+<link href="https://codepen.io/lukemeyrick/pen/YeexWB" rel="stylesheet">
+ <link rel="stylesheet" href="//brick.a.ssl.fastly.net/Roboto:400"/>
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"  type="text/css" />
+<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+
+<body>
+<header>
+	<div class="container">
+		<div class="hamIcon" id="hamIcon" onClick="toggleSidebar()">
+			<div class="hamburger"></div>
+		</div>
+		
+		<div class="logo">
+			<a href="index.html">Artiders&nbsp;</a>
+		</div>
+		
+		<div class="menu">
+			<nav>
+				<ul>
+					<li><a href="#" class="menu-item">Home</a></li>
+					<li><a href="#" class="menu-item">Artists</a></li>
+					<li><a href="#" class="menu-item">Events</a></li>
+					<li><a href="javascript:;" class="menu-item" id="search"><i class="fa fa-search"></i>&nbsp;&nbsp;Search for awesome content</a></li>
+				</ul>
+				<div class="search-form">
+					<form>
+						<input id="search-bar" type="text" name="" placeholder="Start typing....">
+					</form>
+				</div>
+				<a class="close"><i class="fa fa-times"></i></a>
+			</nav>
+		</div>
+		
+		<div class="account">
+			<a class="header-button" href="javascript:;" id="login">LOG IN</a>
+		
+			<div class="account-menu">
+				<img src="img/account-icon.png" alt="Account Menu">
+			</div>
+		</div>
+	</div>
+</header>
+
+<!-- log in form -->
+
+<div class="logform" id="logform">
+	  <form class="register-form">
+		<input type="text" placeholder="Firstname"/>
+		<input type="text" placeholder="Lastname"/>
+		<input type="text" placeholder="Email Address"/>
+		<input type="password" placeholder="Password"/>
+		<input type="password" placeholder="Confirm Password"/>
+		<button>create</button>
+		<p class="message">Already registered? <a href="#">Sign In</a></p>
+	  </form>
+	  <form class="login-logform">
+		<input type="text" placeholder="Username"/>
+		<input type="password" placeholder="Password"/>
+		<button>login</button>
+		<p class="message">Not registered? <a href="#">Create an account</a></p>
+	  </form>
+	</div>
+
+
+
+<div class="sidebar" id="sidebar">
+	<ul style="margin-top: 5em;">
+		<li><a href="01-home.html"><i class="fa fa-home style-icon"></i>Home</a></li>
+		<li><a href="#"><i class="fa fa-bolt style-icon"></i>Trending</a></li>
+		<li><a href="14-history.html"><i class="fa fa-clock-o style-icon"></i>History</a></li>
+ 		<li><a href="10-upload.html"><i class="fa fa-upload style-icon"></i>upload</a></li>
+	</ul>
+	<ul>
+		<li><a href="#"><i class="fa fa-edit style-icon"></i>edit profile</a></li>
+		<li><a href="#"><i class="fa fa-sign-out style-icon"></i>sing out</a></li>
+	</ul>
+	<ul>
+		
+		<li><a href="#"><i class="fa fa-question-circle style-icon"></i>Help</a></li>
+		<li><a href="#"><i class="fa fa-send-o style-icon"></i>Send feedback</a></li>
+	</ul>
+</div>
+
+<div class="home-hero parallax--bg">
+<!--
+	<div class="container">
+
+
+	</div>
+-->
+</div>
+
+
+
+<div class="call-text call-text-1">
+ 		<h1>Are you an artist?</h1>
+		<div class="wrapper">
+			<div class="call-btn btn--border btn--primary btn--animated">JOIN US</div>
+		</div>
+</div>
+
+<div class="call-text call-text-2">
+ 		<h1>Are you seeking an artist?</h1>
+		<div class="wrapper">
+			<div class="call-btn btn--border btn--primary btn--animated">JOIN US</div>
+		</div>
+</div>
+
+
+
+
+<div class="categories">
+	<div class="container">
+		<ul>
+			<li><a href="#">Music</a></li>
+			<li><a href="#">Dance</a></li>
+			<li><a href="#">Artworks</a></li>
+			<li><a href="#">Writing</a></li>
+			<li><a href="#">Filming</a></li>
+			<li><a href="#">Photography</a></li>
+			<li><a href="#">Acting</a></li>
+		</ul>
+	</div>	
+</div>
+
+<section>
+	<div class="container">
+		<div class="content">
+			<div class="box">
+				<h1>This is heading</h1>
+				<p>This is text is this is text. This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.</p>
+			</div>
+			
+			<div class="box">
+				<h1>This is heading</h1>
+				<p>This is text is this is text. This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.</p>
+			</div>
+			<div class="box">
+				<h1>This is heading</h1>
+				<p>This is text is this is text. This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.</p>
+			</div>
+			<div class="box">
+				<h1>This is heading</h1>
+				<p>This is text is this is text. This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.</p>
+			</div>
+			<div class="box">
+				<h1>This is heading</h1>
+				<p>This is text is this is text. This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.</p>
+			</div>
+			<div class="box">
+				<h1>This is heading</h1>
+				<p>This is text is this is text. This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.This is text is this is text.</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<footer>
+	<div class="container">
+		
+		
+	</div>
+</footer>
+
+<!-- Scripts -->
+
+<script src="js/custom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Flip/1.0.18/jquery.flip.js"></script>
+</body>
+</html>
